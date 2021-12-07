@@ -53,8 +53,14 @@ const verbruik = (number) => {
 // console.log(verbruik(10));
 
 const makeDifferenceArray = (array) => {
+    const hoogste = Math.max(...array);
+    const laagste = Math.min(...array);
+    const workArray = [];
+    for(a = laagste; a <= hoogste; a++) {
+        workArray.push(a);
+    };
     const verschilArray = [];
-    array.forEach(number => {
+    workArray.forEach(number => {
         const numberToCompare = number;
         let differences = [];
         for(i = 0; i < array.length; i++) {
