@@ -82,3 +82,4 @@ const arrayTen = makeNewYArray(arrayNine, 27);
 const arrayEleven = makeNewYArray(arrayTen, 13);
 const arrayTwelve = makeNewYArray(arrayEleven, 6);
 console.log(arrayTwelve);
+

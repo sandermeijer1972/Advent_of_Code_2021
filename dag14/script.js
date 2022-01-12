@@ -77,3 +77,26 @@ console.log(uitkomst);
 
 // PART 2
 
+const stringAfter11 = voegToe(stringAfterTen, input);
+const stringAfter12 = voegToe(stringAfter11, input);
+const stringAfter13 = voegToe(stringAfter12, input);
+const stringAfter14 = voegToe(stringAfter13, input);
+const stringAfter15 = voegToe(stringAfter14, input);
+const stringAfter16 = voegToe(stringAfter15, input);
+const stringAfter17 = voegToe(stringAfter16, input);
+const stringAfter18 = voegToe(stringAfter17, input);
+const stringAfter19 = voegToe(stringAfter18, input);
+const stringAfter20 = voegToe(stringAfter19, input);
+
+console.log(stringAfter20.length);
+
+const arrayPerTwo = (string, array) => {
+    const newArray = [];
+    for (i = 0; i < string.length - 2; i++) {
+        const newStr = string[i]+string[i+1];
+        newArray.push(newStr);
+    };
+    console.log(newArray);
+};
+
+arrayPerTwo(stringAfter20, input);
